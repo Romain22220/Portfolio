@@ -1,5 +1,6 @@
 {
   "name": "devfolio",
+  "homepage": "https://Romain22220.github.io/Portfolio",
   "version": "1.5.0",
   "description": "A simple, responsive, single-page portfolio and resume for developers built with Bulma, Sass, Font Awesome and Flickity.",
   "main": "webpack.config.js",
@@ -7,7 +8,10 @@
   "author": "Mark Macneil",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+
   },
   "devDependencies": {
     "bulma": "^0.9.3",
